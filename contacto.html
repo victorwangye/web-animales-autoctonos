@@ -43,7 +43,7 @@
     
     <form action="/submit_contact" method="POST" id="contact-form">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required pattern="^[^\d@$#][^0-9@$#]*$" title="El nombre no debe comenzar ni contener números ni caracteres especiales como $, @ o #"><br><br>
         
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required><br><br>
