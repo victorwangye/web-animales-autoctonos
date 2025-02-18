@@ -132,7 +132,7 @@
         top: 100%;
         position: absolute;
         width: 15%;
-        z-index: 1;
+        z-index: 9;
     }
     .descubre:hover{
         background-color: #0f5b8e;
