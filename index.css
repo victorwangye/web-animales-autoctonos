@@ -979,8 +979,8 @@
         opacity: 0;
         transition: opacity 0.3s;
     } 
-    .mariposa_img: hover .texto_mariposa {
-        opacity: 1;
+    .mariposa_img:hover + .mariposa_texto {
+    opacity: 1;
     }
     .contenedor_flora_home{
         margin-top: 3%;
