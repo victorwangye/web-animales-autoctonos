@@ -942,9 +942,9 @@
         transition: transform 0.5s ease;
     }
     .slide_home{
-        display: grid;
-        grid-template-rows: auto auto auto;
-        min-height: 450px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;       
         gap: 10px;
         margin-top: 3%;
         width: 100%;
