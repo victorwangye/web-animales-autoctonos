@@ -949,7 +949,7 @@
         margin-top: 3%;
         width: 100%;
         height: auto; 
-        max-height: 65vh
+        max-height: 70vh
         flex-shrink: 0;
         text-align: center;
         padding: 10px;
@@ -961,7 +961,8 @@
     } 
     .mariposa_img {
         width: auto;
-        height: 35vh;
+        height: auto; 
+        max-height: 65vh
         border-radius: 10px;
         transition: transform 0.3s ease;
         position: relative;
@@ -1100,6 +1101,7 @@
         border-radius: 5px;
         padding: 2%;
         cursor: pointer;
+        position: relative;
     }
 
 
