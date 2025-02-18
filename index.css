@@ -955,12 +955,14 @@
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
         font-family: 'Georgia', serif;
         overflow: hidden;
+        display: block;
     } 
     .mariposa_img {
         width: auto;
         height: 20vh;
         border-radius: 10px;
         transition: transform 0.3s ease;
+        position: relative;
     }
     .mariposa_texto{
         font-family: "Times New Roman", Times, serif;
@@ -969,7 +971,17 @@
         font-size: 120%;
         color: darkblue;
         font-weight: bold;
-    }   
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: traslate(-50%, -50%);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s;
+    } 
+    .mariposa_img: hover .texto_mariposa {
+        opacity: 1;
+    }
     .contenedor_flora_home{
         margin-top: 3%;
         box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
