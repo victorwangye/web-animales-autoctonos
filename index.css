@@ -956,6 +956,7 @@
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
         font-family: 'Georgia', serif;
         overflow: hidden;
+        postion: relative;
     } 
     .mariposa_img {
         width: auto;
@@ -964,6 +965,7 @@
         border-radius: 10px;
         transition: transform 0.3s ease;
         cursor: pointer;
+        postion: relative;
     }
     .mariposa_texto{
         font-family: "Times New Roman", Times, serif;
