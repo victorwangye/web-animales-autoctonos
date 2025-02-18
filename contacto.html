@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contacto</title>
+</head>
+
+<body class="body_home body_form">
+    <header>
+        <div id="contenedor_menu_movil">
+            <div class="div_menu">
+                <img class="img_menu" src="imagenes/svg/menu.svg" alt="menu">
+            </div>
+            <ul id="contenedor_desplegable">
+                <li><a href="index.html" class="men1" id="men2">Inicio</a></li>
+                <li><a href="fauna/fauna.html" class="men1">Fauna</a></li> 
+                <li><a href="contacto.html" class="men1">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <div id="contenedor_logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" id="logo" alt="logo">
+            </a>     
+        </div>
+        
+        <div class="inicio_menu"><a href="index.html" class="home_texto">Inicio</a></div>
+
+        <div id="contenedor_menu_pc">
+            <div class="descubre">Descubre</div>
+                <ul id="menu_desplegable">
+                    <li><a href="fauna/fauna.html" class="men1">Fauna</a></li>             
+                    <li><a href="flora/flora.html" class="men1">Flora</a></li>             
+                    <li><a href="contacto.html" class="men1">Contacto</a></li>
+                </ul>
+        </div>
+    <br>
+    </header>
+
+    <h1 style="display: flex; text-align: center; justify-content: center; font-size: 200%; margin-top: 5%;">Formulario de contacto</h1>
+    
+    <form action="/submit_contact" method="POST" id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="query_type">Tipo de consulta:</label>
+        <select id="query_type" name="query_type">
+            <option value="informacion">Información sobre fauna</option>
+            <option value="colaborar">Colaborar con el proyecto</option>
+            <option value="otros">Otros</option>
+        </select><br><br>
+        
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="event_participation">¿Estarías dispuesto a colaborar en actividades o eventos relacionados con la fauna?</label><br>
+        <div class="radio">
+            <input type="radio" id="evento_si" name="event_participation" value="sí"> Sí, me gustaría colaborar y participar activamente
+        </div>
+        <div class="radio">
+            <input type="radio" id="evento_no" name="event_participation" value="no"> No, no me interesa colaborar
+        </div>
+        <div class="radio">
+            <input type="radio" id="evento_quiza" name="event_participation" value="quizás"> Tal vez en el futuro si se presenta una oportunidad<br><br>
+        </div><br><br>
+
+        <label for="newsletter">¿Deseas recibir novedades sobre fauna?</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="sí"><br> Sí, quiero recibir noticias y novedades sobre fauna<br><br>
+        
+        <label for="flora_updates">¿Deseas recibir información sobre flora?</label>
+        <input type="checkbox" id="flora_updates" name="flora_updates" value="sí"><br> Sí, quiero recibir noticias y novedades sobre flora<br><br>
+    
+        <label for="terms">Acepto los términos y condiciones:</label>
+        <input type="checkbox" id="terms_conditions" name="terms_conditions" value="sí" required><br><a href="aviso_legal.html" style="color: blue;">  Términos y condiciones</a><br><br>
+        
+    
+        <input type="submit" value="Enviar" class="form_boton">
+        <input type="reset" value="Borrar" class="form_boton">
+    </form>
+    
+    
+    <br><br>
+    <footer>
+        <img src="imagenes/logo_footer.png" class="logo_footer">
+        <div class="enlaces_footer">
+            <ul class="listado_enlaces">
+                <li><a href="index.html" class="textofooter">Inicio</a></li>
+                <li><a href="contacto.html" class="textofooter">Contacto</a></li>
+            </ul>
+            <ul class="listado_enlaces">
+                <li><a href="fauna/fauna.html" class="textofooter">Fauna</a></li>
+                <li><a href="flora/flora.html" class="textofooter">Flora</a></li>
+            </ul>
+            <ul class="listado_enlaces">
+                <li><a href="aviso_legal.html" class="textofooter">Aviso legal</a></li>
+                <li><a href="politica_privacidad.html"class="textofooter">Política de privacidad</a></li>
+            </ul>
+        </div>
+      
+        <div class="redes_sociales">
+            <p>Redes Sociales:<br><br>
+            <a href="https://www.linkedin.com/in/victorwy/"><img src="imagenes/footer/linkedin.png" class="red_social"></a>
+            <a href="https://github.com/victorwangye"><img src="imagenes/footer/github.png" class="red_social"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts/email.js"></script>
+</body>
+</html>

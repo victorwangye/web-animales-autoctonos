@@ -1,0 +1,1282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*VERSION PC*/
+@media screen and (min-width:850px){
+    /* Estilos para la ventana de cookies */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    z-index: 1000;
+    display: none; /* Inicialmente no visible */
+}
+#cookie-banner button {
+    background-color: #4c74af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#cookie-banner button:hover {
+    background-color: #1a5cc1;
+}
+
+    .footer_flora{
+        position: absolute;
+        bottom: 0;
+    }
+    .contenedor_img_cons{
+        display: flex;
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .body_flora{
+        min-height: 100vh;
+        display: flex;
+    }
+    .img_cons{
+        width: 100%;
+        height: auto;
+    }
+    .body_home{
+        overflow-x: hidden
+    }
+    header {
+        background-color: #2699e5;
+        box-shadow: 0px 6px 5px gainsboro;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+    }
+    #contenedor_menu_movil{
+        display: none;
+    }
+    .contenedor_header{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #contenedor_menu_pc{
+        margin-left: 5%;
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .men1{
+        color: #2699e5;
+        font-size: 150%;
+        width: 60%;
+        font-family: 'Arial', sans-serif;
+    }
+    .men1:hover {
+        background-color: #2699e5; 
+        color: white;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px; 
+    }
+    
+    .inicio_menu{
+        background-color: #1e81c2;
+        width: 10vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inicio_menu:hover{
+        background-color: #0f5b8e;
+    }
+    .home_texto{
+        font-size: 200%;
+        color: white;
+    }
+
+    .descubre{
+        background-color: #1e81c2;
+        font-size: 150%;
+        color: white;
+        width: 15vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;  
+        font-family: 'Arial', sans-serif;  
+    }
+    #menu_desplegable{
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: auto;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid #2699e5;
+        direction: ltr;
+        top: 100%;
+        position: absolute;
+        width: 15%;
+        z-index: 1;
+    }
+    .descubre:hover{
+        background-color: #0f5b8e;
+    }
+    #contenedor_menu_pc:hover #menu_desplegable{
+        display: block;
+    }
+    a {
+        text-decoration: none;
+    }
+    #contenedor_logo {
+        display: flex;
+        justify-content: left;
+        padding-top: 0.5%;
+        padding-left: 15%;
+    }
+    #logo {
+        margin-left: 10vw;
+        width: 6vh;
+        height: auto;
+    }
+    
+    footer{
+        background-color: rgba(35, 33, 33, 0.782);
+        margin-top: 5%;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 3fr 2fr;
+    }
+    .logo_footer{
+        display: flex;
+        content: center;
+        width: 30%;
+        height: auto;
+        margin-left: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .redes_sociales{
+        font-size: 150%;
+        color: white;
+    }
+    .enlaces_footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .listado_enlaces{
+        list-style: none;
+        
+    }
+    .textofooter{
+        color: white;
+        font-size: 120%;
+    }
+    .red_social{
+        width: 4vw;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-image: url(imagenes/railroad-tracks-1835529_1280.jpg);
+        color: white;
+    }
+    label{
+        margin-bottom: 2%;
+    }
+    .radio{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+    .form_boton{
+        background-color: goldenrod;
+        border: none;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2%;
+        color: white;
+        font-size: 120%;
+    }
+    /*Inicio*/
+    .contenedor_gran_img{
+        width: 100%;
+        height: 100vh;    
+        position: relative;
+        overflow: hidden;
+        margin: 0%;
+    }
+    .gran_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        margin: 0%;
+    }
+    
+    .texto_gran_img1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 400%;
+        z-index: 2;
+        position: absolute;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        padding-top: 3%;
+    }
+    .texto_gran_img2{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 400%;
+        z-index: 2;
+        position: absolute;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        padding-top: 9%;
+    }
+    
+    .contenedor_texto_home{
+        margin-left: 20%;
+        margin-right: 20%;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 60%;
+        height: auto;
+        background-color: #0f5b8e;
+        color: white;
+    }
+    .texto_home{
+        margin-top: 3%;
+        font-size: 200%;
+        font-family: Arial, sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .contenedor_mariposas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0%;
+        margin-top: 5%;
+        background-image: url(imagenes/fondo_mariposa.jpg);
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+    .articulo_home{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: flex-end;
+        overflow: hidden;
+
+    } 
+    .mariposa_texto{
+        font-family: "Times New Roman", Times, serif;
+        font-size: 120%;
+        margin-left: 3%;
+        margin-right: 3%;
+        color: darkblue;
+        font-weight: bold;
+        margin-top: 5%;
+    }   
+    .contenedor_flora_home{
+        margin-top: 3%;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5px;
+    }
+    .img_flora_home{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .contenedor_texto_flora_home{
+        display: flex;
+        flex-direction: column;
+        margin-right: 3%;
+        margin-left: 3%;
+        justify-content: flex-end;
+
+    }
+    .titulo_flora_home{
+        font-size: 350%;
+    }
+    .texto_flora_home{
+        font-size: 200%;
+    }
+
+
+ 
+    
+
+    /*Fauna*/
+    .filtros_container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .filtro_btn {
+        padding: 8px 16px;
+        border: 2px solid #ddd;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .filtro_btn:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .filtro_btn.activo {
+        background-color: #2196F3;
+        color: white;
+        border-color: #2196F3;
+    }
+    
+    .articulo_fauna.oculto {
+        display: none;
+    }
+    .seccion_fauna{
+        margin-top: 5%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .titulo_fauna{
+        font-size: 350%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center
+    }
+    .articulo_fauna{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 5px;
+        }
+    .img_articulo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .titulo_articulo{
+        font-size: 200%;
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        font-family: 'Inflex', sans-serif;
+    }
+    .boton_fauna{
+        display: flex;
+        margin-top: 3%;
+        font-size: 100%;
+        background-color: rgb(28, 180, 28);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 2%;
+        cursor: pointer;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*Fichas*/
+   
+    .contenedor1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    .bloque2{
+        grid-column: 2;
+        text-align: start;
+        justify-content: start;
+        gap: 10px;
+        
+    }
+    .bloque1{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .svg{
+        width: 5%;
+        height: auto;
+        padding-top: 2%;
+        vertical-align: middle;
+    }
+    .nombre{
+        font-size: 300%;
+        font-family: 'Georgia', serif;
+    }
+    .textoficha{
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+        gap: 1%;
+        font-family: 'Georgia', serif;
+        line-height: 1.2; 
+    }
+    
+    /*Animacion*/
+    .article_animacion{
+        position: relative;
+        transition: all 0.5s ease;
+        width: 100%;
+        padding-top: 5%;
+  
+    }
+    .imagen1{
+        width: 100%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .imagen1_especial{
+        width: 100%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .imagen2{
+        position: absolute;
+        margin: auto;
+        width:50%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial{
+        position: absolute;
+        margin: auto;
+        width:97%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial_3{
+        position: absolute;
+        margin: auto;
+        width:91%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial_4{
+        position: absolute;
+        margin: auto;
+        width:54%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .article_animacion:hover{
+        transform: perspective(250px) rotateX(10deg) 
+                translateY(-5%) translateZ(0);
+    }
+    .article_animacion::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient
+            (to bottom, transparent 10%,
+            rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95% );
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .article_animacion:hover .imagen2 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial_3 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial_4 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen1_especial {
+        opacity: 0.5;
+    }
+
+
+    /*otros animales*/
+    .otros{
+        font-size: 300%;
+        font-family: 'Georgia', serif;
+        margin-left: 3%;
+        margin-top: 5%;      
+    }
+    .contenedor2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1%;
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+    }
+    .bloque3{
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Georgia', serif;
+        font-size: 150%;
+        width: 90%;
+        height: 80%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+        margin-left: 3%;
+        margin-right: 3%;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 15%;
+        border: none;
+        border-radius: 10px;
+    }
+    .otros_img{
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+        object-fit: cover
+    }
+    .boton{
+        display: none;
+    }
+    .bloque3 p{
+        margin-left: 3%;
+        position: absolute;
+        font-family: 'Inflex', sans-serif;
+    }
+    .bloque3:hover p{
+        color: white;
+        z-index: 3;
+        transform: translateY(-120%);
+    }
+    .bloque3:hover .otros_img{
+        transform: translateY(20%);
+        height: auto;
+    }
+    .bloque3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 0, 0.5); 
+        pointer-events: none; 
+        z-index: 2;
+        opacity: 0; 
+        transition: opacity 0.5s ease; 
+      }
+   .bloque3:hover::before {
+        opacity: 1;
+    }
+      
+        
+
+}
+
+
+
+/*VERSION movil y tablet*/
+@media screen and (min-width:0px) and (max-width:850px){
+    #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+        z-index: 1000;
+        display: none; /* Inicialmente no visible */
+    }
+    #cookie-banner button {
+        background-color: #4c74af;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    #cookie-banner button:hover {
+        background-color: #1a5cc1;
+    }
+    .footer_flora{
+        position: absolute;
+        bottom: 0;
+    }
+    .contenedor_img_cons{
+        display: flex;
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .img_cons{
+        width: 100%;
+        height: auto;
+    }
+    
+    .body_flora{
+        overflow-x: hidden;
+    }
+    .body_home{
+        overflow-x: hidden;
+    }
+    header {
+        background-color: #2699e5;
+        box-shadow: 0px 6px 5px gainsboro;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        padding: 0 20px;
+    }
+    #contenedor_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+    .div_menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 10vh;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_menu {
+        width: 5vh;
+        height: auto;
+    }
+    .men1{
+        font-size: 150%;
+        color: #2699e5;
+    }
+    .men1:hover {
+        background-color: #2699e5;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    #contenedor_desplegable {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: auto;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid #2699e5;
+        direction: ltr;
+        top: 100%;
+        position: absolute;
+        z-index: 3;
+        padding-right: 5%;
+        left: 0;
+    }
+    #contenedor_menu_movil:hover #contenedor_desplegable {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+    }
+    #contenedor_logo {
+        display: flex;
+        align-items: center;
+        padding-right: 60%;
+    }
+    #logo {
+        width: 7vh;
+        height: auto;
+    }
+    #contenedor_menu_movil {
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    #contenedor_menu_pc{
+        display: none;
+    }
+    .inicio_menu{
+        display: none;
+    }
+    footer{
+        background-color: rgba(35, 33, 33, 0.782);
+        margin-top: 0; 
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        width: 100%;
+        height: auto;
+    }
+    .logo_footer{
+        display: flex;
+        content: center;
+        width: 30%;
+        height: auto;
+        margin-left: 3%;
+        margin-bottom: 10%;
+    }
+    .redes_sociales{
+        font-size: 150%;
+        color: white;
+    }
+    .enlaces_footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .listado_enlaces{
+        list-style: none;
+        
+    }
+    .textofooter{
+        color: white;
+        font-size: 120%;
+    }
+    .red_social{
+        width: 5vw;
+        height: auto;
+    }
+
+
+    .body_form{
+        background-image: url(imagenes/railroad-tracks-1835529_1280.jpg);
+        color: white;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    label{
+        margin-bottom: 2%;
+    }
+    .radio{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+    }
+    .form_boton{
+        background-color: goldenrod;
+        border: none;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2%;
+        color: white;
+        font-size: 120%;
+    }
+
+    /*Inicio*/
+    .contenedor_gran_img{
+        width: 100%;
+        height: auto;    
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+    }
+    .gran_img {
+        width: 100%;
+        height: 100vh; 
+        object-fit: cover; 
+    }
+    
+    .texto_gran_img1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 200%;
+        z-index: 2;
+        position: absolute;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        padding-top: 3%;
+        margin-left: 2%;
+    }
+    .texto_gran_img2{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 200%;
+        z-index: 2;
+        position: absolute;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        padding-top: 9%;
+        margin: 1%;
+        margin-left: 2%;
+    }
+
+    .contenedor_texto_home{
+        margin-left: 20%;
+        margin-right: 20%;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 60%;
+        height: auto;
+        background-color: #0f5b8e;
+        color: white;
+    }
+    .texto_home{
+        margin-top: 3%;
+        font-size: 200%;
+        font-family: Arial, sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .contenedor_mariposas{
+        display: flex;
+        gap: 1%;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 80%;
+        align-items: center;
+        margin: 20px auto;
+        font-size: 200%;
+        transition: transform 0.5s ease;
+    }
+    .slide_home{
+        margin-top: 3%;
+        width: 100%;
+        height: 95vh;
+        flex-shrink: 0;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+        font-family: 'Georgia', serif;
+        overflow: hidden;
+    } 
+    .mariposa_img {
+        width: auto;
+        height: 20vh;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .mariposa_texto{
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 120%;
+        color: darkblue;
+        font-weight: bold;
+    }   
+    .contenedor_flora_home{
+        margin-top: 3%;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5px;
+    }
+    .img_flora_home{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .contenedor_texto_flora_home{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+        margin-left: 10%;
+        justify-content: flex-end;
+
+    }
+    .titulo_flora_home{
+        font-size: 350%;
+    }
+    .texto_flora_home{
+        font-size: 200%;
+    }
+
+
+    /*Fauna*/
+    .filtros_container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .filtro_btn {
+        padding: 8px 16px;
+        border: 2px solid #ddd;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .filtro_btn:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .filtro_btn.activo {
+        background-color: #2196F3;
+        color: white;
+        border-color: #2196F3;
+    }
+    
+    .articulo_fauna.oculto {
+        display: none;
+    }
+    .seccion_fauna{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .titulo_fauna{
+        font-size: 350%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .articulo_fauna{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        height: auto;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 5px;
+    }
+    .img_articulo{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .titulo_articulo{
+        font-size: 250%;
+        display: flex;
+        margin-top: 2%;
+        margin-left: 3%;
+        font-family: 'Inflex', sans-serif;
+    }
+    .boton_fauna{
+        display: flex;
+        margin-top: 2%;
+        font-size: 100%;
+        background-color: rgb(28, 180, 28);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 2%;
+        cursor: pointer;
+    }
+
+
+    /*Fichas*/
+   
+    .contenedor1{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    .bloque2{
+        grid-row: 2;
+        
+    }
+    .bloque1{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        justify-content: start;
+        gap: 10px;
+    }
+    .svg{
+        width: 5%;
+        height: auto;
+        padding-top: 2%;
+        vertical-align: middle;
+    }
+    .nombre{
+        font-size: 300%;
+        font-family: 'Georgia', serif;
+    }
+    .textoficha{
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+        gap: 1%;
+        font-family: 'Georgia', serif;
+        line-height: 1.2; 
+    }
+       /*Animacion*/
+    .article_animacion{
+        position: relative;
+        transition: all 0.5s ease;
+        width: 100%;
+        padding-top: 5%;
+  
+    }
+    .imagen1{
+        width: 100%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .imagen1_especial{
+        width: 100%;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
+    }
+    .imagen2{
+        position: absolute;
+        margin: auto;
+        width:50%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial{
+        position: absolute;
+        margin: auto;
+        width:97%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial_3{
+        position: absolute;
+        margin: auto;
+        width:91%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .imagen2_especial_4{
+        position: absolute;
+        margin: auto;
+        width:54%;
+        left: 0;
+        right: 0;
+        transform: translateY(25%);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .article_animacion:hover{
+        transform: perspective(250px) rotateX(10deg) 
+                translateY(-5%) translateZ(0);
+    }
+    .article_animacion::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient
+            (to bottom, transparent 10%,
+            rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0) 95% );
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .article_animacion:hover .imagen2 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial_3 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen2_especial_4 {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    .article_animacion:hover .imagen1_especial {
+        opacity: 0.5;
+    }
+    /*otros animales*/
+    .otros {
+        font-size: 300%;
+        font-family: 'Georgia', serif;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+    
+    .contenedor2 {
+        display: flex;
+        gap: 1%;
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 80%;
+        align-items: center;
+        margin: 20px auto;
+        font-size: 200%;
+        transition: transform 0.5s ease;
+    }
+    
+    .slide_otros {
+        width: 100%;
+        flex-shrink: 0;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+        font-family: 'Georgia', serif;
+    }
+    
+    .otros_img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .prev, .next {
+        border: 2px solid green;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 2%;
+        width: 8%;
+        background-color: white;
+    }
+    
+    .flecha {
+        position: relative;
+        top: 3px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .boton {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: greenyellow;
+        border: 3px solid green;
+    }
+       
+}
