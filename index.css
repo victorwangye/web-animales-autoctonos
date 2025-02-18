@@ -963,6 +963,7 @@
         border-radius: 10px;
         transition: transform 0.3s ease;
         position: relative;
+        cursor: pointer;
     }
     .mariposa_texto{
         font-family: "Times New Roman", Times, serif;
