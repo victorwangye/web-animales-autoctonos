@@ -16,7 +16,7 @@
         padding: 15px;
         font-size: 14px;
         z-index: 1000;
-        display: none; /* Inicialmente no visible */
+        display: none;
         }
     #cookie-banner button {
         background-color: #4c74af;
