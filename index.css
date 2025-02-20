@@ -4,7 +4,6 @@
 }
 /*VERSION PC*/
 @media screen and (min-width:850px){
-    /* Estilos para la ventana de cookies */
     #cookie-banner {
         position: fixed;
         bottom: 0;
