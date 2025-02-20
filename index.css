@@ -938,7 +938,7 @@
         width: 80%;
         align-items: center;
         margin: 20px auto;
-        font-size: 200%;
+        font-size: 150%;
         transition: transform 0.5s ease;
     }
     .slide_home{
@@ -956,16 +956,16 @@
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
         font-family: 'Georgia', serif;
         overflow: hidden;
-        postion: relative;
+        position: relative;
     } 
     .mariposa_img {
         width: auto;
         height: auto; 
-        max-height: 70vh
+        max-height: 70vh;
         border-radius: 10px;
         transition: transform 0.3s ease;
         cursor: pointer;
-        postion: relative;
+        position: relative;
     }
     .mariposa_texto{
         font-family: "Times New Roman", Times, serif;
